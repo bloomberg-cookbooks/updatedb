@@ -50,7 +50,7 @@ vendor
 .chef
 .chefdk
 .kitchen
-.kitchen.local.yml
 .vagrant
 Berksfile.lock
-Policyfile.lock.json
+coverage/
+default.lock.json
