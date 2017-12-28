@@ -1,10 +1,10 @@
 #
-# Cookbook: updatedb-cookbook
+# Cookbook: blp-updatedb
 # License: Apache 2.0
 #
-# Copyright (C) 2016 Bloomberg Finance L.P.
+# Copyright 2015-2017, Bloomberg Finance L.P.
 #
-default['updatedb']['service_name'] = 'default'
+
 default['updatedb']['config']['path'] = '/etc/updatedb.conf'
 
 default['updatedb']['config']['settings']['prune_bind_mounts'] = 'yes'

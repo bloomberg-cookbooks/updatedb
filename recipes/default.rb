@@ -1,9 +1,10 @@
 #
-# Cookbook: updatedb
+# Cookbook: blp-updatedb
+# License: Apache 2.0
 #
-# Copyright (c) 2016 Bloomberg L.P., All Rights Reserved.
+# Copyright 2015-2017, Bloomberg Finance L.P.
 #
 
-updatedb node['updatedb']['service_name'] do |r|
-    node['updatedb']['config'].each_pair { |k, v| r.send(k, v) }
+updatedb_config '/etc/updatedb.conf' do
+  settings node['updatedb']['config']['settings']
 end
